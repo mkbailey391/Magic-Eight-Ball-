@@ -1,11 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Magic Eightball</title>
+</head>
+<body>
+<div class="container">
+    <div class="number">8</div>
+    <form>
+        <input type="text" placeholder="Ask any question...">
+    </form>
+    <div class="answer"></div>
+</div>
+
+</body>
+</html>
+
 body {
     margin: 0;
     text-align: center;
 }
 
+
+
 .container {
     height: 500px;
-    width: 500px;
+    width: 500px; 
     background-color: black;
     margin: 0 auto;
     border-radius: 250px;
@@ -16,12 +40,29 @@ body {
 }
 
 .number {
-    margin:0 auto;
+    margin: 0 auto;
     height: 150px;
     width: 150px;
     background-color: white;
-    border-radius: 75px;
+    border-radius: 75px; 
     font-size: 75px;
     font-weight: bold;
+    line-height: 150px;
+}
+
+form {
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.answer {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+    border-radius: 50px; 
+    font-size: 50px;
+    font-weight: bold;
+    border: 2px solid grey;
     line-height: 150px;
 }
